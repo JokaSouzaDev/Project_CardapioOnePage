@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Soft | Cardápio Online</title>
+    <!-- Tailwind CSS para estilização moderna e ágil -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Ícones do FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased pb-24">
+
+    <!-- CABEÇALHO / HERO -->
+    <header class="relative h-52 flex flex-col items-center justify-center text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(9,9,11,1)), url('https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=1000');">
+        <div class="z-10 px-4">
+            <h1 class="text-3xl md:text-4xl font-black tracking-wider text-amber-500 uppercase">BURGER <span class="text-white">SOFT</span></h1>
+            <p class="text-zinc-400 text-sm mt-1"><i class="fas fa-motorcycle text-amber-500 mr-1"></i> Delivery: Terça a Domingo das 18h às 23h</p>
+        </div>
+    </header>
+
+    <!-- NAVEGAÇÃO / CATEGORIAS (Fica fixa no topo ao rolar a página) -->
+    <div class="sticky top-0 z-50 bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800 py-4 overflow-x-auto shadow-lg">
+        <div class="max-w-4xl mx-auto px-4 flex justify-start md:justify-center gap-3 min-w-max">
+            <a href="#artesanais" class="bg-amber-500 text-zinc-950 font-bold px-4 py-2 rounded-full text-sm uppercase tracking-wide transition-all shadow-md">Burgers</a>
+            <a href="#acompanhamentos" class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 font-bold px-4 py-2 rounded-full text-sm uppercase tracking-wide transition-all">Porções</a>
+            <a href="#bebidas" class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 font-bold px-4 py-2 rounded-full text-sm uppercase tracking-wide transition-all">Bebidas</a>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO DO CARDÁPIO -->
+    <main class="max-w-4xl mx-auto px-4 mt-8 space-y-12">
+
+        <!-- CATEGORIA 1: HAMBÚRGUERES ARTESANAIS -->
+        <section id="artesanais" class="scroll-mt-24">
+            <h2 class="text-xl font-black uppercase tracking-wide border-l-4 border-amber-500 pl-3 mb-6">Burgers Artesanais</h2>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                
+                <!-- Item 1 -->
+                <div class="bg-zinc-900 border border-zinc-800/80 rounded-xl overflow-hidden flex shadow-lg hover:border-zinc-700 transition-colors">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=300" alt="Classic Burger" class="w-28 h-auto object-cover">
+                    <div class="p-4 flex flex-col justify-between flex-1">
+                        <div>
+                            <h3 class="font-bold text-lg text-white">Classic Craft</h3>
+                            <p class="text-zinc-400 text-xs mt-1 line-clamp-2">Blend bovino de 150g, queijo prato derretido, alface, tomate fresco e maionese artesanal da casa.</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                            <span class="text-amber-500 font-black text-lg">R$ 28,00</span>
+                            <a href="https://wa.me/5500999999999?text=Olá! Gostaria de pedir o Classic Craft" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white p-2 rounded-lg text-xs font-bold transition-colors flex items-center gap-1">
+                                <i class="fab fa-whatsapp text-sm"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-zinc-900 border border-zinc-800/80 rounded-xl overflow-hidden flex shadow-lg hover:border-zinc-700 transition-colors">
+                    <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&q=80&w=300" alt="Cheddar Bacon" class="w-28 h-auto object-cover">
+                    <div class="p-4 flex flex-col justify-between flex-1">
+                        <div>
+                            <h3 class="font-bold text-lg text-white">Cheddar & Bacon</h3>
+                            <p class="text-zinc-400 text-xs mt-1 line-clamp-2">Blend bovino de 150g, muito queijo cheddar cremoso e fatias de bacon super crocantes.</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                            <span class="text-amber-500 font-black text-lg">R$ 34,00</span>
+                            <a href="https://wa.me/5500999999999?text=Olá! Gostaria de pedir o Cheddar e Bacon" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white p-2 rounded-lg text-xs font-bold transition-colors flex items-center gap-1">
+                                <i class="fab fa-whatsapp text-sm"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-zinc-900 border border-zinc-800/80 rounded-xl overflow-hidden flex shadow-lg hover:border-zinc-700 transition-colors">
+                    <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&q=80&w=300" alt="Monster Crispy" class="w-28 h-auto object-cover">
+                    <div class="p-4 flex flex-col justify-between flex-1">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-bold text-lg text-white">Monster Crispy</h3>
+                                <span class="bg-amber-500/10 text-amber-500 text-[10px] uppercase font-bold px-1.5 py-0.5 rounded border border-amber-500/20">Destaque</span>
+                            </div>
+                            <p class="text-zinc-400 text-xs mt-1 line-clamp-2">Dois blends de 150g, queijo cheddar duplo, cebola crispy bem crocante e molho barbecue.</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                            <span class="text-amber-500 font-black text-lg">R$ 42,00</span>
+                            <a href="https://wa.me/5500999999999?text=Olá! Gostaria de pedir o Monster Crispy" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white p-2 rounded-lg text-xs font-bold transition-colors flex items-center gap-1">
+                                <i class="fab fa-whatsapp text-sm"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CATEGORIA 2: ACOMPANHAMENTOS / PORÇÕES -->
+        <section id="acompanhamentos" class="scroll-mt-24">
+            <h2 class="text-xl font-black uppercase tracking-wide border-l-4 border-amber-500 pl-3 mb-6">Acompanhamentos</h2>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                
+                <!-- Item 1 -->
+                <div class="bg-zinc-900 border border-zinc-800/80 rounded-xl overflow-hidden flex shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=300" alt="Batata Frita" class="w-28 h-auto object-cover">
+                    <div class="p-4 flex flex-col justify-between flex-1">
+                        <div>
+                            <h3 class="font-bold text-lg text-white">Batata Rústica</h3>
+                            <p class="text-zinc-400 text-xs mt-1">Porção individual de batatas rústicas fritas na hora com alecrim e páprica.</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                            <span class="text-amber-500 font-black text-lg">R$ 14,00</span>
+                            <a href="https://wa.me/5500999999999?text=Olá! Gostaria de pedir a Batata Rústica" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white p-2 rounded-lg text-xs font-bold transition-colors flex items-center gap-1">
+                                <i class="fab fa-whatsapp text-sm"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-zinc-900 border border-zinc-800/80 rounded-xl overflow-hidden flex shadow-lg">
+                    <img src="https://media.istockphoto.com/id/533423341/pt/foto/aros-de-cebola-frita-plano-aproximado.jpg?s=612x612&w=0&k=20&c=5kwWavxli8XFUaJbL0ZTLIsXBS14lSCTexgjtzwOFVg=" alt="Onion Rings" class="w-28 h-auto object-cover">
+                    <div class="p-4 flex flex-col justify-between flex-1">
+                        <div>
+                            <h3 class="font-bold text-lg text-white">Onion Rings</h3>
+                            <p class="text-zinc-400 text-xs mt-1">Anéis de cebola empanados e fritos, super crocantes. Acompanha molho verde.</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-3">
+                            <span class="text-amber-500 font-black text-lg">R$ 16,00</span>
+                            <a href="https://wa.me/5500999999999?text=Olá! Gostaria de pedir a Onion Rings" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white p-2 rounded-lg text-xs font-bold transition-colors flex items-center gap-1">
+                                <i class="fab fa-whatsapp text-sm"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CATEGORIA 3: BEBIDAS -->
+        <section id="bebidas" class="scroll-mt-24">
+            <h2 class="text-xl font-black uppercase tracking-wide border-l-4 border-amber-500 pl-3 mb-6">Bebidas</h2>
+            
+            <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden shadow-lg divide-y divide-zinc-800/60">
+                <!-- Bebida 1 -->
+                <div class="p-4 flex justify-between items-center hover:bg-zinc-800/20 transition-colors">
+                    <div>
+                        <h3 class="font-bold text-white">Refrigerante Lata (350ml)</h3>
+                        <p class="text-xs text-zinc-500">Coca-Cola, Guaraná Antarctica ou Sprite.</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="text-amber-500 font-black">R$ 6,00</span>
+                        <a href="https://wa.me/5500999999999?text=Olá! Gostaria de incluir um Refrigerante Lata" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded-lg text-xs font-bold transition-colors"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Bebida 2 -->
+                <div class="p-4 flex justify-between items-center hover:bg-zinc-800/20 transition-colors">
+                    <div>
+                        <h3 class="font-bold text-white">Cerveja Long Neck (330ml)</h3>
+                        <p class="text-xs text-zinc-500">Heineken ou Stella Artois.</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="text-amber-500 font-black">R$ 9,00</span>
+                        <a href="https://wa.me/5500999999999?text=Olá! Gostaria de incluir uma Cerveja Long Neck" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded-lg text-xs font-bold transition-colors"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- INFORMAÇÕES DE ENTREGA FIXAS EM BAIXO (Opcional, mas excelente para experiência mobile) -->
+    <footer class="fixed bottom-0 left-0 right-0 bg-zinc-900 border-t border-zinc-800 px-4 py-3 flex justify-between items-center z-40 max-w-4xl mx-auto md:rounded-t-2xl shadow-2xl">
+        <div class="text-left">
+            <span class="block text-[10px] uppercase font-bold text-zinc-500 tracking-wider">Atendimento pelo WhatsApp</span>
+            <span class="text-emerald-400 font-bold text-sm flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Estamos Abertos</span>
+        </div>
+        <a href="https://wa.me/5500999999999?text=Olá! Gostaria de ver as opções do cardápio." target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-black px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider flex items-center gap-2 shadow-lg transition-transform hover:scale-105">
+            <i class="fab fa-whatsapp text-lg"></i> Monte seu Pedido
+        </a>
+    </footer>
+
+</body>
+</html>
